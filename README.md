@@ -23,7 +23,7 @@ f_clus_n_show(X, fe_label, clus_alg, dis_type, n_row_clus, n_col_clus);
 
 ```
 
-![alt text](https://github.com/gozhen/clust_show/blob/master/fig/eg1.png "")
+![alt text](https://github.com/gozhen/ClusterShow/blob/master/fig/eg1.png "")
 
 The data is a 2-dimensional array: each row is an instance - a school in this example; each column is a feature – they are the school performance on different subjects and the demographic information in this example. Here this example contains 171 schools and 33 features.
 We can specify the clustering algorithm and the distance type to be used. If we choose ‘kmeans’ clustering, we also need to specify the desired number of clusters. If we do not want to specify the number of clusters, we can choose to use 'Qcut' or 'HQcut'. Current version support 3 clustering algorithms, 'kmeans', 'Qcut' and 'HQcut'. More clustering algorithm will be added. The current supported distance types are 'euclidean', 'cosine' and 'corr'.
@@ -48,7 +48,7 @@ f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
 
 ```
 
-![alt text](https://github.com/gozhen/clust_show/blob/master/fig/eg2.png "")
+![alt text](https://github.com/gozhen/ClusterShow/blob/master/fig/eg2.png "")
 
 
 #### example 3, on data planning
@@ -64,7 +64,7 @@ X = normalize(X);
 f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
 ```
 
-![alt text](https://github.com/gozhen/clust_show/blob/master/fig/eg3.png "")
+![alt text](https://github.com/gozhen/ClusterShow/blob/master/fig/eg3.png "")
 
 
 
