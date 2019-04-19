@@ -1,10 +1,11 @@
-## Cluster-show
+## ClusterShow
 ### A simple tool for data clustering and visualization.
 v_0.1
 
-This tool helps people to quickly understand a dataset. 
+ClusterShow is a simple tool for general data analysis. It firstly performs clustering on the data, then visualizes the clustering result using heatmap on the original dataset and on the instance-instance similarity matrix. It helps people to quickly make some sense from a dataset. 
 
-Written in Matlab, it combines different clustering and visualization algorithms. 
+ClusterShow is Written in Matlab, and there are multiple optional clustering algorithms to choose from. 
+
 
 ### Some Examples:
 
