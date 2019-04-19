@@ -10,8 +10,22 @@ n_col_clus = 5;
 f_clus_n_show(X, fe_label, clus_alg, dis_type, n_row_clus, n_col_clus);
 
 %%
-%% example 2, on the iris dataset
-load('./demo_data/data_school.mat');
+%% example 2, on data planning
+% https://archive.ics.uci.edu/ml/datasets/Planning+Relax
+
+load('./demo_data/data_planning.mat');
+n_row_clus = 15;
+n_col_clus = 5;
+
+X = normalize(X);
+%[X] = f_discrete_data(X);
+
+f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
+
+
+%%
+%% example 3, on the iris dataset
+load('./demo_data/data_iris.mat');
 
 %%
 clus_alg = 'kmeans';
@@ -23,18 +37,6 @@ X = normalize(X);
 [X] = f_discrete_data(X);
 
 f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
-
-%%
-%% example 3, on data planning
-load('./demo_data/data_planning.mat');
-n_row_clus = 15;
-n_col_clus = 5;
-
-X = normalize(X);
-%[X] = f_discrete_data(X);
-
-f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
-
 
 
 %%
