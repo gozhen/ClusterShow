@@ -6,9 +6,9 @@ This tool helps people to quickly understand a dataset.
 
 Written in Matlab, it combines different clustering and visualization algorithms. 
 
-###Some Examples:
+### Some Examples:
 
-####example 1, on a school clustering dataset
+#### example 1, on a school clustering dataset
 ```
 load('./demo_data/data_school.mat');
 addpath('./fun/');
@@ -29,7 +29,7 @@ We can specify the clustering algorithm and the distance type to be used. If we 
 The visualization contains two sub-figures - the figure on the left side is the clusters view on the original dataset, which shows different clusters of schools. Looking down from the highlighted block within a cluster, we can see the feature names, and these common features of a cluster might show some interesting insights of the dataset. On the right side, it shows the clustered similarity matrix of the instances. Each element (pixel) shows the similarity level between two instances. The brighter (yellow) the color, the more similar between two instances; the darker (blue) the color, the more different between the two instances. Each rectangle area shows the similarities of the elements between two clusters. A bright rectangle means the two clusters are very similar. Here on the above figure, most of rectangles (square actually) on the diagonal are much brighter than the other rectangle not on the diagonal,  which means that the clustering result is very good – the elements inside each clusters are highly similar, while they are very different from all the result elements. 
 
 
-####example 2, on the iris dataset
+#### example 2, on the iris dataset
 
 ```
 load('./demo_data/data_school.mat');
@@ -50,7 +50,7 @@ f_clus_n_show(X, '', clus_alg, dis_type, n_row_clus, n_col_clus);
 ![alt text](https://github.com/gozhen/clust_show/blob/master/fig/eg2.png "")
 
 
-####example 3, on data planning
+#### example 3, on data planning
 
 ```
 load('./demo_data/data_planning.mat');
