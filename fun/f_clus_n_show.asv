@@ -1,11 +1,6 @@
-function f_clus_n_show(X, fe_label, clus_alg, dis_type, n_row_clus, n_col_clus,...
-    fig_oposi)
+function [] = f_clus_n_show(X, fe_label, clus_alg, dis_type, n_row_clus, n_col_clus)
 %
-if nargin < 7
-    figure,
-else
-    figure('Position', fig_oposi)
-end
+
 % clus_alg, clustering algorithm; can be 'kmeans', 'Qcut', 'HQcut'
 % dis_type, distance type; can be 'euclidean', 'cosine', 'corr'
 
@@ -18,6 +13,7 @@ sim = corrcoef(X');
 [~, ix_clus_fe] = sort(clus_fe);
 
 
+figure,
 % Show clusters on the original data
 % subplot(1,16,1:7);
 subplot(5,16,[1:7 17:23 33:39 49:55]);
@@ -32,7 +28,7 @@ set(gca, 'XTickLabelRotation', 90);
 
 % Show clusters on the similarity matrix
 % subplot(1,16,9:15);
-subplot(5,16,[9:15 25:31 41:47 57:63]);
+subplot(5,16,[9:15 25:31 41:47 ]);
 o = showClusters(clus, sim, 1);
 
 
