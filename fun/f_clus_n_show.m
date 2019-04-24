@@ -9,13 +9,14 @@ end
 % clus_alg, clustering algorithm; can be 'kmeans', 'Qcut', 'HQcut'
 % dis_type, distance type; can be 'euclidean', 'cosine', 'corr'
 
-[ clus, net ] = f_do_clustering(X, clus_alg, n_row_clus, dis_type);
-clus = f_clustLoc_arr_to_cell(clus);
+[ clus_inst, net ] = f_do_clustering(X, clus_alg, n_row_clus, dis_type);
+clus = f_clustLoc_arr_to_cell(clus_inst);
 sim = corrcoef(X');
 
 [ clus_fe, net_fe ] = f_do_clustering(X', clus_alg, n_col_clus, dis_type);
 % clus_fe = f_clustLoc_arr_to_cell(clus_fe);
 [~, ix_clus_fe] = sort(clus_fe);
+[~, ix_clus_inst] = sort(clus_inst);
 
 
 % Show clusters on the original data
