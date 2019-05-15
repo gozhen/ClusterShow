@@ -1,7 +1,8 @@
 function showRowClusters(clusts, a, j, color, width, noLine)
 
 if (nargin < 4)
-    color = 'b';
+    %color = 'b';
+    color = 'w';
 end
 
 if (nargin < 5)
